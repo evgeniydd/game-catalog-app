@@ -12,5 +12,7 @@ class Game extends Model
         'title', 'developer', 'genre', 'release_date', 'platform', 'price', 'cover_image'
     ];
 
-    protected $dates = ['release_date'];
+    protected $casts = [
+        'release_date' => 'datetime',
+    ];
 }
